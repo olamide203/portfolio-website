@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"text": "About",
+		"link": "/#about"
+	},
+	{
+		"id": 2,
+		"text": "Projects",
+		"link": "/#projects"
+	},
+	{
+		"id": 3,
+		"text": "Contact",
+		"link": "/#contact"
+	},
+	{
+		"id": 4,
+		"text": "Blog",
+		"link": "/blog"
+	}
+]
