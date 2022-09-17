@@ -81,3 +81,7 @@
 		url('/fonts/Calibre/Calibre-SemiboldItalic.woff') format('woff'),
 		url('/fonts/Calibre/Calibre-SemiboldItalic.ttf') format('truetype');
 }
+
+* {
+	box-sizing: border-box;
+}

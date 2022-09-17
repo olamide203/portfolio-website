@@ -9,10 +9,12 @@ module.exports = {
 			},
 			gridTemplateColumns: {
 				'auto-1fr': 'auto 1fr',
+				'1fr-auto': '1fr auto',
 			},
 		},
 		colors: {
 			neutral: {
+				50: '#FFFFFF',
 				100: '#FDFEFF',
 				700: '#1E1E1E',
 				800: '#1A1A1A',
