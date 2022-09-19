@@ -3,9 +3,11 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Link from 'next/link';
 import Image from 'next/image';
+import Heading from '../components/Heading';
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import socials from '../data/socials.json';
+import Skills from '../components/Skills/Index';
 
 interface Icons {
 	[key: string]: IconType | undefined;
@@ -21,7 +23,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Header></Header>
-			<div className='fixed bottom-0 z-10 flex flex-col items-center justify-center gap-6 pl-12 pb-6 text-slate-100 after:mx-auto after:h-40 after:w-px after:bg-slate-100'>
+			<div className='fixed bottom-0 z-10 hidden flex-col items-center justify-center gap-6 pl-12 pb-6 text-slate-100 after:mx-auto after:h-40 after:w-px after:bg-slate-100 md:flex'>
 				{socials.map(social => {
 					const Icon = icons[social.name];
 					return (
@@ -33,16 +35,16 @@ const Home: NextPage = () => {
 					);
 				})}
 			</div>
-			<div className='fixed -right-8 bottom-0 z-10 flex max-h-fit flex-auto -translate-y-[calc(50%+136px)] rotate-90 flex-row items-center justify-center gap-6 font-mono text-slate-100 after:mx-auto after:h-40 after:w-px after:translate-x-20 after:rotate-90 after:bg-slate-100'>
+			<div className='fixed -right-8 bottom-0 z-10 hidden max-h-fit flex-auto -translate-y-[calc(50%+136px)] rotate-90 flex-row items-center justify-center gap-6 font-mono text-slate-100 after:mx-auto after:h-40 after:w-px after:translate-x-20 after:rotate-90 after:bg-slate-100 md:flex'>
 				<Link href='mailto:olamideumarq@gmail.com'>
 					<a className='cursor-pointer hover:text-blue-200'>olamideumarq@gmail.com</a>
 				</Link>
 			</div>
-			<main className='mx-auto w-full max-w-screen-2xl px-40'>
-				<section className='mx-20 grid min-h-screen max-w-screen-lg content-center items-start'>
+			<main className='mx-auto w-full max-w-screen-2xl px-10 md:px-40'>
+				<section className='grid min-h-screen max-w-screen-lg content-center items-start xl:mx-20'>
 					<span className='my-4 font-mono text-blue-400'>Hi there, I&apos;m</span>
-					<h2 className='text-7xl font-semibold text-slate-50'>Olamide Atitebi.</h2>
-					<h3 className='my-4 text-5xl font-semibold text-slate-100'>
+					<h2 className='text-5xl font-semibold text-slate-50 sm:text-7xl'>Olamide Atitebi.</h2>
+					<h3 className='my-4 text-3xl font-semibold text-slate-100 sm:text-4xl md:text-5xl'>
 						A full-stack Developer, <br /> Passionate about open source.
 					</h3>
 					<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50'>
@@ -51,10 +53,11 @@ const Home: NextPage = () => {
 						</Link>
 					</button>
 				</section>
-				<section id='about' className='mx-20 mb-40 grid grid-cols-1fr-auto gap-16'>
-					<h4 className='flex w-full items-center whitespace-nowrap text-2xl font-semibold text-neutral-100 before:relative before:bottom-0 before:mr-2.5 before:font-mono before:text-xl before:font-normal before:text-blue-400 before:content-["01."] after:relative after:ml-6 after:h-px after:w-60 after:bg-neutral-100 after:text-neutral-100'>
-						About Me
-					</h4>
+				<section
+					id='about'
+					className='mb-40 grid grid-cols-1 gap-16 lg:grid-cols-1fr-auto xl:mx-20'
+				>
+					<Heading text='About Me' id={1}></Heading>
 					<div className='col-start-1'>
 						<p className='text-[20px] font-normal text-neutral-50'>
 							Hello, my name is Olamide and I&apos;m a self-taught full-stack software developer who
@@ -64,8 +67,8 @@ const Home: NextPage = () => {
 							to the community while at it.
 						</p>
 					</div>
-					<div className=''>
-						<div className='relative aspect-square w-full cursor-pointer shadow before:absolute before:inset-0 before:block before:aspect-square before:w-full before:rotate-12 before:rounded before:border before:border-blue-400 after:absolute after:top-0 after:-z-10 after:block after:aspect-square after:w-full after:rotate-6 after:rounded after:border after:border-blue-400 before:hover:rotate-45 before:hover:scale-105 before:hover:duration-300 after:hover:rotate-12 after:hover:scale-105 after:hover:bg-contain after:hover:duration-300'>
+					<div className='grid items-center justify-center'>
+						<div className='relative aspect-square w-[300px] cursor-pointer shadow before:absolute before:inset-0 before:block before:aspect-square before:w-full before:rotate-12 before:rounded before:border before:border-blue-400 after:absolute after:top-0 after:-z-10 after:block after:aspect-square after:w-full after:rotate-6 after:rounded after:border after:border-blue-400 before:hover:rotate-45 before:hover:scale-105 before:hover:duration-300 after:hover:rotate-12 after:hover:scale-105 after:hover:bg-contain after:hover:duration-300'>
 							<Image
 								src='/images/headshot.png'
 								width={300}
@@ -78,6 +81,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
+				<Skills />
 			</main>
 		</>
 	);

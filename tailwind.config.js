@@ -10,6 +10,7 @@ module.exports = {
 			gridTemplateColumns: {
 				'auto-1fr': 'auto 1fr',
 				'1fr-auto': '1fr auto',
+				'auto-fit-skills': 'repeat(auto-fit, minmax(120px, 1fr))',
 			},
 		},
 		colors: {

@@ -1,0 +1,62 @@
+[
+	{
+		"name": "typescript",
+		"link": "https://www.typescriptlang.org/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+	},
+	{
+		"name": "javascript",
+		"link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+	},
+	{
+		"name": "python",
+		"link": "https://www.python.org/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+	},
+	{
+		"name": "nodejs",
+		"link": "https://nodejs.org/en/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+	},
+	{
+		"name": "HTML",
+		"link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+	},
+	{
+		"name": "CSS",
+		"link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+	},
+	{
+		"name": "react",
+		"link": "https://reactjs.org/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+	},
+	{
+		"name": "express",
+		"link": "https://expressjs.com/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+	},
+	{
+		"name": "nextjs",
+		"link": "https://nextjs.org/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+	},
+	{
+		"name": "mongodb",
+		"link": "https://www.mongodb.com/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+	},
+	{
+		"name": "mariaDB",
+		"link": "https://mariadb.org/",
+		"imageURL": "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg"
+	},
+	{
+		"name": "git",
+		"link": "https://git-scm.com/",
+		"imageURL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+	}
+]
