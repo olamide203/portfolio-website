@@ -56,7 +56,7 @@ const Home: NextPage = () => {
 				</section>
 				<section
 					id='about'
-					className='mb-40 grid grid-cols-1 gap-16 lg:grid-cols-1fr-auto xl:mx-20'
+					className='mb-40 grid grid-cols-1 items-start gap-16 lg:grid-cols-1fr-auto xl:mx-20'
 				>
 					<Heading text='About Me' id={1}></Heading>
 					<div className='col-start-1'>
