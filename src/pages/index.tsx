@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 				</Link>
 			</div>
 			<main className='mx-auto w-full max-w-screen-2xl px-10 md:px-40'>
-				<section className='grid min-h-screen max-w-screen-lg content-center items-start xl:mx-20'>
+				<section className='my-10 grid min-h-screen max-w-screen-lg content-start items-start sm:my-0 sm:content-center xl:mx-20'>
 					<span className='my-4 font-mono text-blue-400'>Hi there, I&apos;m</span>
 					<h2 className='text-[clamp(40px,8vw,80px)] font-semibold text-slate-50'>
 						Olamide Atitebi.

@@ -9,7 +9,7 @@ export interface SkillProps {
 
 const Skill: React.FC<SkillProps> = ({ name, link, imageURL }) => {
 	return (
-		<div className='flex aspect-square w-full items-center justify-center rounded border border-blue-200 bg-neutral-700 p-4'>
+		<div className='flex aspect-square w-full items-center justify-center rounded bg-neutral-700 p-4'>
 			<a
 				href={link}
 				target='_blank'
@@ -25,7 +25,7 @@ const Skill: React.FC<SkillProps> = ({ name, link, imageURL }) => {
 					layout='fixed'
 					className='rounded'
 				></Image>
-				<span className='font-mono text-lg capitalize text-neutral-50'>{name}</span>
+				<span className='text-xs capitalize text-neutral-50'>{name}</span>
 			</a>
 		</div>
 	);
