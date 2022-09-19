@@ -25,7 +25,7 @@ const Skill: React.FC<SkillProps> = ({ name, link, imageURL }) => {
 					layout='fixed'
 					className='rounded'
 				></Image>
-				<span className='text-xs capitalize text-neutral-50'>{name}</span>
+				<span className='capitalize text-neutral-50'>{name}</span>
 			</a>
 		</div>
 	);
