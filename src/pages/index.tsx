@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Header from '../components/Header';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -43,7 +42,9 @@ const Home: NextPage = () => {
 			<main className='mx-auto w-full max-w-screen-2xl px-10 md:px-40'>
 				<section className='grid min-h-screen max-w-screen-lg content-center items-start xl:mx-20'>
 					<span className='my-4 font-mono text-blue-400'>Hi there, I&apos;m</span>
-					<h2 className='text-5xl font-semibold text-slate-50 sm:text-7xl'>Olamide Atitebi.</h2>
+					<h2 className='text-[clamp(40px,8vw,80px)] font-semibold text-slate-50'>
+						Olamide Atitebi.
+					</h2>
 					<h3 className='my-4 text-3xl font-semibold text-slate-100 sm:text-4xl md:text-5xl'>
 						A full-stack Developer, <br /> Passionate about open source.
 					</h3>
@@ -60,15 +61,15 @@ const Home: NextPage = () => {
 					<Heading text='About Me' id={1}></Heading>
 					<div className='col-start-1'>
 						<p className='text-[20px] font-normal text-neutral-50'>
-							Hello, my name is Olamide and I&apos;m a self-taught full-stack software developer who
-							loves solving problems with code and learning about new technologies. I&apos;m
-							passionate about Open source and enjoy creating and making contributions to
-							open-source projects as it helps me to refine my skills and at the same time add value
-							to the community while at it.
+							Hello, my name is Olamide and I&apos;m a full-stack software developer who loves
+							solving problems with code and learning about new technologies. I&apos;m passionate
+							about Open source and enjoy creating and making contributions to open-source projects
+							as it helps me to refine my skills and at the same time add value to the community
+							while at it.
 						</p>
 					</div>
 					<div className='grid items-center justify-center'>
-						<div className='relative aspect-square w-[300px] cursor-pointer shadow before:absolute before:inset-0 before:block before:aspect-square before:w-full before:rotate-12 before:rounded before:border before:border-blue-400 after:absolute after:top-0 after:-z-10 after:block after:aspect-square after:w-full after:rotate-6 after:rounded after:border after:border-blue-400 before:hover:rotate-45 before:hover:scale-105 before:hover:duration-300 after:hover:rotate-12 after:hover:scale-105 after:hover:bg-contain after:hover:duration-300'>
+						<div className='relative aspect-square w-[300px] cursor-pointer shadow'>
 							<Image
 								src='/images/headshot.png'
 								width={300}
