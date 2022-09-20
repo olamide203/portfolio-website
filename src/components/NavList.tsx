@@ -25,7 +25,7 @@ const NavList: React.FC<NavListProps> = ({ isVisible, closeNav }) => {
 			<motion.ul
 				style={{ x: y }}
 				id='navigation'
-				className='fixed top-0 left-1/3 right-0 bottom-0 z-40 flex list-none flex-col items-center gap-6 bg-neutral-700 py-[min(30vh_,_100px)] font-mono text-lg sm:static sm:flex-row sm:justify-end sm:bg-neutral-800 sm:p-4 sm:text-sm'
+				className='fixed top-0 left-1/3 right-0 bottom-0 z-40 flex list-none flex-col items-center gap-6 bg-neutral-800 py-[min(30vh_,_100px)] font-mono text-lg sm:static sm:flex-row sm:justify-end sm:bg-neutral-900 sm:p-4 sm:text-sm'
 			>
 				{items.map((item: NavItemProps) => (
 					<NavItem key={item.id} {...item} />

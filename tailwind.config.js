@@ -10,13 +10,14 @@ module.exports = {
 			gridTemplateColumns: {
 				'auto-1fr': 'auto 1fr',
 				'1fr-auto': '1fr auto',
-				'auto-fit-skills': 'repeat(auto-fit, minmax(90px, 1fr))',
+				'auto-fit-skills': 'repeat(auto-fit, minmax(100px, 1fr))',
 			},
 		},
 		colors: {
 			neutral: {
 				50: '#FFFFFF',
 				100: '#FDFEFF',
+				600: '#2C2C2C',
 				700: '#1E1E1E',
 				800: '#1A1A1A',
 				900: '#121415',
@@ -26,6 +27,7 @@ module.exports = {
 				100: '#B8D9FB',
 				200: '#77BBDB',
 				400: '#44A2D2',
+				500: '#0096FF',
 				600: '#102351',
 			},
 			navy: {
