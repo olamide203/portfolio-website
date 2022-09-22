@@ -84,43 +84,6 @@ const Home: NextPage = () => {
 				<Skills />
 				<section className='mb-40 xl:mx-20'>
 					<Heading text='Projects' id={3}></Heading>
-					<div className='grid grid-cols-12 items-start pt-12'>
-						{/* <div className='relative col-start-1 col-end-[-1] row-start-1 row-end-2 h-[350px] w-full before:absolute before:inset-0 before:z-[3] before:h-full before:w-full before:bg-neutral-900 before:mix-blend-screen sm:col-end-8'>
-							<Image
-								src='/images/hyoka-5.png'
-								alt='hyoka'
-								layout='fill'
-								objectFit='cover'
-								objectPosition='center'
-								className='rounded opacity-5 transition-all duration-500 sm:opacity-100'
-								quality={100}
-							></Image>
-						</div>
-						<div className='z-10 col-start-1 col-end-[-1] row-start-1  row-end-2 self-center rounded p-6 text-start sm:col-start-7 sm:bg-neutral-700'>
-							<h3 className='text-3xl font-semibold text-neutral-100'>Hyoka</h3>
-							<p className='text-lg text-neutral-100'>
-								A fast and precise math expression parser and evaluator for JavaScript and
-								Typescript. Avalable on npm and can also be imported directly into browsers via CDNs
-							</p>
-							<div className='mt-4 flex items-center gap-4'>
-								<span className='rounded-2xl bg-blue-400 px-3 pt-1 text-neutral-50'>
-									Typescript
-								</span>
-							</div>
-							<div className='mt-4 flex items-center gap-4'>
-								<Link href='https://github.com/olamide203/hyoka'>
-									<a className='text-2xl text-neutral-50 hover:text-blue-400'>
-										<FiGithub></FiGithub>
-									</a>
-								</Link>
-								<Link href='https://www.npmjs.com/package/hyoka'>
-									<a className='text-2xl text-neutral-50 hover:text-blue-400'>
-										<FiExternalLink></FiExternalLink>
-									</a>
-								</Link>
-							</div>
-						</div> */}
-					</div>
 					{projects.map((project: ProjectProps, index) => (
 						<Project key={index} {...project}></Project>
 					))}
