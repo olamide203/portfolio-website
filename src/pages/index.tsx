@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Heading from '../components/Heading';
 import Project, { ProjectProps } from '../components/Project';
-import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiExternalLink } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import socials from '../data/socials.json';
 import Skills from '../components/Skills/Index';

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { styled } from '../../stitches.config';
 
 export interface ProjectProps {
@@ -19,6 +20,7 @@ const StyledProjectImage = styled('div', {
 	gridRow: '1 / 2',
 	height: '350px',
 	width: '100%',
+	alignSelf: 'center',
 	'&::before': {
 		content: '""',
 		position: 'absolute',
@@ -52,7 +54,7 @@ const StyledProject = styled('div', {
 	gridColumn: '1 / -1',
 	gridRow: '1 / 2',
 	alignSelf: 'center',
-	borderRadius: '10px',
+	borderRadius: '5px',
 	padding: '1.5rem',
 	zIndex: 10,
 	textAlign: 'start',
@@ -79,10 +81,9 @@ const StyledProject = styled('div', {
 	},
 });
 
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
 const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
 	return (
-		<div className='grid grid-cols-12 items-start pt-12'>
+		<div className='grid grid-cols-12 items-start py-12'>
 			<StyledProjectImage position={props.id % 2 == 1 ? 'left' : 'right'}>
 				<Image
 					src={props.image}
@@ -97,9 +98,12 @@ const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
 			<StyledProject position={props.id % 2 == 0 ? 'left' : 'right'}>
 				<h3 className='text-3xl font-semibold text-neutral-100'>{props.title}</h3>
 				<p className='text-lg text-neutral-100'>{props.description}</p>
-				<div className='mt-4 flex items-center gap-4'>
+				<div className='mt-4 flex items-center gap-2'>
 					{props.tech.map((tech, index) => (
-						<span className='rounded-2xl bg-blue-400 px-3 pt-1 text-neutral-50' key={index}>
+						<span
+							className='rounded-2xl bg-blue-400 px-3 pt-1 capitalize text-neutral-50'
+							key={index}
+						>
 							{tech}
 						</span>
 					))}
