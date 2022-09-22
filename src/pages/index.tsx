@@ -3,10 +3,12 @@ import Header from '../components/Header';
 import Link from 'next/link';
 import Image from 'next/image';
 import Heading from '../components/Heading';
+import Project, { ProjectProps } from '../components/Project';
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiExternalLink } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import socials from '../data/socials.json';
 import Skills from '../components/Skills/Index';
+import projects from '../data/projects.json';
 
 interface Icons {
 	[key: string]: IconType | undefined;
@@ -39,7 +41,7 @@ const Home: NextPage = () => {
 					<a className='cursor-pointer hover:text-blue-200'>olamideumarq@gmail.com</a>
 				</Link>
 			</div>
-			<main className='mx-auto w-full max-w-screen-2xl px-10 md:px-40'>
+			<main className='mx-auto w-full max-w-screen-2xl px-10 md:px-24'>
 				<section className='my-10 grid min-h-screen max-w-screen-lg content-center sm:my-0 xl:mx-20'>
 					<span className='my-4 font-mono text-blue-400'>Hi there, I&apos;m</span>
 					<h2 className='text-[clamp(40px,8vw,80px)] font-semibold text-slate-50'>
@@ -83,7 +85,7 @@ const Home: NextPage = () => {
 				<section className='mb-40 xl:mx-20'>
 					<Heading text='Projects' id={3}></Heading>
 					<div className='grid grid-cols-12 items-start pt-12'>
-						<div className='relative col-start-1 col-end-[-1] row-start-1 row-end-2 h-[350px] w-full before:absolute before:inset-0 before:z-[3] before:h-full before:w-full before:bg-neutral-900 before:mix-blend-screen sm:col-end-8'>
+						{/* <div className='relative col-start-1 col-end-[-1] row-start-1 row-end-2 h-[350px] w-full before:absolute before:inset-0 before:z-[3] before:h-full before:w-full before:bg-neutral-900 before:mix-blend-screen sm:col-end-8'>
 							<Image
 								src='/images/hyoka-5.png'
 								alt='hyoka'
@@ -117,8 +119,11 @@ const Home: NextPage = () => {
 									</a>
 								</Link>
 							</div>
-						</div>
+						</div> */}
 					</div>
+					{projects.map((project: ProjectProps, index) => (
+						<Project key={index} {...project}></Project>
+					))}
 				</section>
 			</main>
 		</>

@@ -11,6 +11,7 @@
 		"format:fix": "prettier . --write --ignore-unknown"
 	},
 	"dependencies": {
+		"@stitches/react": "^1.2.8",
 		"framer-motion": "^7.3.5",
 		"next": "12.2.5",
 		"react": "18.2.0",
