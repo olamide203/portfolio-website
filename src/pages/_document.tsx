@@ -6,6 +6,23 @@ export default class Document extends NextDocument {
 		return (
 			<Html>
 				<Head>
+					{/* <!-- Open Graph / Facebook --> */}
+					<meta property='og:type' content='website' data-rh='true' />
+					<meta property='og:url' content='https://olamide.netify.live/' data-rh='true' />
+					<meta property='og:title' content='olamide.netify' data-rh='true' />
+					<meta property='og:description' content='portfolio website' data-rh='true' />
+					<meta property='og:image' content='../../../public/images/meta.png' data-rh='true' />
+
+					{/* <!-- Twitter --> */}
+					<meta property='twitter:card' content='summary_large_image' data-rh='true' />
+					<meta property='twitter:url' content='https://olamide.netify.live/' data-rh='true' />
+					<meta property='twitter:title' content='olamide.netify' data-rh='true' />
+					<meta property='twitter:description' content='my portfolio website' data-rh='true' />
+					<meta
+						property='twitter:image:src'
+						content='../../../public/images/meta.png'
+						data-rh='true'
+					/>
 					<style id='stitches' dangerouslySetInnerHTML={{ __html: getCssText() }} />
 				</Head>
 				<body className='overflow-x-hidden bg-neutral-900'>
