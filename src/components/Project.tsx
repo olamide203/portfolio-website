@@ -87,7 +87,7 @@ const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
 			<StyledProjectImage position={props.id % 2 == 1 ? 'left' : 'right'}>
 				<Image
 					src={props.image}
-					alt='hyoka'
+					alt='project'
 					layout='fill'
 					objectFit='cover'
 					objectPosition='center'
@@ -96,7 +96,7 @@ const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
 				></Image>
 			</StyledProjectImage>
 			<StyledProject position={props.id % 2 == 0 ? 'left' : 'right'}>
-				<h3 className='text-3xl font-semibold text-neutral-100'>{props.title}</h3>
+				<h3 className='text-3xl font-semibold capitalize text-neutral-100'>{props.title}</h3>
 				<p className='text-lg text-neutral-100'>{props.description}</p>
 				<div className='mt-4 flex items-center gap-2'>
 					{props.tech.map((tech, index) => (

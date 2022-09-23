@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Header></Header>
-			<div className='fixed bottom-0 z-10 hidden flex-col items-center justify-center gap-6 pl-12 pb-6 text-slate-100 after:mx-auto after:h-40 after:w-px after:bg-slate-100 md:flex'>
+			<div className='fixed bottom-0 z-10 hidden flex-col items-center justify-center gap-6 px-6 pb-6  text-slate-100 after:mx-auto after:h-40 after:w-px after:bg-slate-100 md:flex lg:px-12'>
 				{socials.map(social => {
 					const Icon = icons[social.name];
 					return (
@@ -36,12 +36,12 @@ const Home: NextPage = () => {
 					);
 				})}
 			</div>
-			<div className='fixed -right-8 bottom-0 z-10 hidden max-h-fit flex-auto -translate-y-[calc(50%+136px)] rotate-90 flex-row items-center justify-center gap-6 font-mono text-slate-100 after:mx-auto after:h-40 after:w-px after:translate-x-20 after:rotate-90 after:bg-slate-100 md:flex'>
+			<div className='fixed -right-16 bottom-0 z-10 hidden max-h-fit flex-auto -translate-y-[calc(50%+136px)] rotate-90 flex-row items-center justify-center gap-6 font-mono text-slate-100 after:mx-auto after:h-40 after:w-px after:translate-x-20 after:rotate-90 after:bg-slate-100 md:flex lg:-right-10'>
 				<Link href='mailto:olamideumarq@gmail.com'>
 					<a className='cursor-pointer hover:text-blue-200'>olamideumarq@gmail.com</a>
 				</Link>
 			</div>
-			<main className='mx-auto w-full max-w-screen-2xl px-10 md:px-24'>
+			<main className='mx-auto w-full max-w-screen-2xl px-10 md:px-28'>
 				<section className='my-10 grid min-h-screen max-w-screen-lg content-center sm:my-0 xl:mx-20'>
 					<span className='my-4 font-mono text-blue-400'>Hi there, I&apos;m</span>
 					<h2 className='text-[clamp(40px,8vw,80px)] font-semibold text-slate-50'>
@@ -81,13 +81,13 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				<Skills />
 				<section className='mb-40 xl:mx-20'>
 					<Heading text='Projects' id={3}></Heading>
 					{projects.map((project: ProjectProps, index) => (
 						<Project key={index} {...project}></Project>
 					))}
 				</section>
+				<Skills />
 			</main>
 		</>
 	);

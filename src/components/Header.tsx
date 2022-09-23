@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 		setIsVisible(false);
 	};
 	return (
-		<header className='fixed top-0 z-40 grid h-20 w-full grid-cols-auto-1fr items-center justify-between gap-4 border-b border-b-neutral-700 bg-neutral-900 px-12 text-neutral-100'>
+		<header className='fixed top-0 z-40 grid h-20 w-full grid-cols-auto-1fr items-center justify-between gap-4 border-b border-b-neutral-700 bg-neutral-900 px-6 text-neutral-100 lg:px-12'>
 			<div className='aspect-square rounded-3xl border-2 border-blue-200 p-2'>
 				<IoFlash className='text-2xl text-blue-200' />
 			</div>
