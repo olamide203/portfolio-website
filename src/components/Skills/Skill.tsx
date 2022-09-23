@@ -9,7 +9,7 @@ export interface SkillProps {
 
 const Skill: React.FC<SkillProps> = ({ name, link, imageURL }) => {
 	return (
-		<div className='flex aspect-square w-full items-center justify-center rounded bg-neutral-700 p-4'>
+		<div className='flex aspect-square w-full cursor-pointer items-center justify-center rounded bg-neutral-700 p-4 duration-300 hover:-translate-y-1'>
 			<a
 				href={link}
 				target='_blank'
