@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Header from '../components/Header';
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Heading from '../components/Heading';
@@ -24,7 +25,38 @@ const icons: Icons = {
 const Home: NextPage = () => {
 	return (
 		<>
-			<Header></Header>
+			<Head>
+				{/* <!-- Open Graph / Facebook --> */}
+				<meta property='og:type' content='website' data-rh='true' />
+				<meta property='og:url' content='https://olamide.netify.live/' data-rh='true' />
+				<meta property='og:title' content='Olamide Atitebi' data-rh='true' />
+				<meta
+					property='og:description'
+					content='A full-stack software developer, passionate about open-source'
+					data-rh='true'
+				/>
+				<meta
+					property='og:image'
+					content='https://olamide.netify.live/images/meta.png'
+					data-rh='true'
+				/>
+
+				{/* <!-- Twitter --> */}
+				<meta property='twitter:card' content='summary_large_image' data-rh='true' />
+				<meta property='twitter:url' content='https://olamide.netify.live' data-rh='true' />
+				<meta property='twitter:title' content='Olamide Atitebi' data-rh='true' />
+				<meta
+					property='twitter:description'
+					content='A full-stack software developer passionate about open-source'
+					data-rh='true'
+				/>
+				<meta
+					property='twitter:image:src'
+					content='https://olamide.netify.live/images/meta.png'
+					data-rh='true'
+				/>
+			</Head>
+			<Header />
 			<div className='fixed bottom-0 z-10 hidden flex-col items-center justify-center gap-6 px-6 pb-6  text-slate-100 after:mx-auto after:h-40 after:w-px after:bg-slate-100 md:flex lg:px-12'>
 				{socials.map(social => {
 					const Icon = icons[social.name];
