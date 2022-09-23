@@ -4,11 +4,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Heading from '../components/Heading';
 import Project, { ProjectProps } from '../components/Project';
-import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiPhone, FiMail } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import socials from '../data/socials.json';
 import Skills from '../components/Skills/Index';
 import projects from '../data/projects.json';
+import FooterLink from '../components/Footer/Link';
 
 interface Icons {
 	[key: string]: IconType | undefined;
@@ -88,6 +89,57 @@ const Home: NextPage = () => {
 					))}
 				</section>
 				<Skills />
+				<section id='contact' className='mb-40 xl:mx-20'>
+					<Heading text='contact me' id={4}></Heading>
+					<div className='mx-auto my-12 grid gap-20 md:grid-cols-1fr-auto'>
+						<div>
+							<p className='text-left text-neutral-100 lg:text-xl'>
+								I&apos;m currently looking for new opportunities and open to collaborations. feel
+								free to reach out to me
+							</p>
+							<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50'>
+								<Link href='mailto:olamideumarq@gmail.com'>
+									<a>Let&apos; connect</a>
+								</Link>
+							</button>
+						</div>
+						<div className='grid grid-cols-1 justify-end self-center text-end text-neutral-50 lg:text-2xl'>
+							<Link href='tel:+2340961316808'>
+								<a className='font-mono'>
+									<FiPhone className='inline' /> +234 906 131 6808
+								</a>
+							</Link>
+							<Link href='mailto:olamideumarq@gmail.com'>
+								<a className='font-mono'>
+									<FiMail className='inline' /> olamideumarq@gmail
+								</a>
+							</Link>
+							<div className='flex flex-row items-center justify-end gap-6  py-6 text-slate-100'>
+								{socials.map(social => {
+									const Icon = icons[social.name];
+									return (
+										Icon && (
+											<a href={social.link} target='_blank' rel='noreferrer' key={social.name}>
+												{<Icon className='h-6 w-6 hover:scale-105 hover:text-blue-200' />}
+											</a>
+										)
+									);
+								})}
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer className='mb-8'>
+					<div className='grid items-center justify-center gap-3 text-center font-mono text-sm text-neutral-50'>
+						<span>
+							Original Design by{' '}
+							<FooterLink text='brittany chiang' href='https://brittanychiang.com' />
+						</span>
+						<span>
+							Built by <FooterLink text='olamide atitebi' href='https://olamide.netify.live' />
+						</span>
+					</div>
+				</footer>
 			</main>
 		</>
 	);
