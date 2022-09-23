@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 					content='A full-stack software developer, passionate about open-source'
 					data-rh='true'
 				/>
-				<meta property='og:image' content='/images/meta.png' data-rh='true' />
+				<meta property='og:image' content='https://olamide.netify.live/images/meta.png' data-rh='true' />
 
 				{/* <!-- Twitter --> */}
 				<meta property='twitter:card' content='summary_large_image' data-rh='true' />
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 					content='A full-stack software developer passionate about open-source'
 					data-rh='true'
 				/>
-				<meta property='twitter:image:src' content='/images/meta.png' data-rh='true' />
+				<meta property='twitter:image:src' content='https://olamide.netify.live/images/meta.png' data-rh='true' />
 			</Head>
 			<Header />
 			<div className='fixed bottom-0 z-10 hidden flex-col items-center justify-center gap-6 px-6 pb-6  text-slate-100 after:mx-auto after:h-40 after:w-px after:bg-slate-100 md:flex lg:px-12'>
