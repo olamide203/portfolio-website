@@ -11,12 +11,12 @@
 	},
 	{
 		"id": 3,
-		"text": "Contact",
-		"link": "/#contact"
+		"text": "skills",
+		"link": "/#skills"
 	},
 	{
 		"id": 4,
-		"text": "Blog",
-		"link": "/blog"
+		"text": "Contact",
+		"link": "/#contact"
 	}
 ]

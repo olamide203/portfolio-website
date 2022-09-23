@@ -59,7 +59,7 @@ const StyledProject = styled('div', {
 	zIndex: 10,
 	textAlign: 'start',
 	'@md': {
-		backgroundColor: '#1E1E1E',
+		backgroundColor: '#1B1F23',
 	},
 
 	variants: {

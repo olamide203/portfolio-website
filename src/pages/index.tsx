@@ -81,7 +81,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				<section className='mb-40 xl:mx-20'>
+				<section className='mb-40 xl:mx-20' id='projects'>
 					<Heading text='Projects' id={3}></Heading>
 					{projects.map((project: ProjectProps, index) => (
 						<Project key={index} {...project}></Project>
