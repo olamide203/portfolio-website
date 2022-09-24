@@ -8,7 +8,8 @@ import Project, { ProjectProps } from '../components/Project';
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiPhone, FiMail } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import socials from '../data/socials.json';
-import Skills from '../components/Skills/Index';
+import Skill, { SkillProps } from '../components/Skill';
+import skills from '../data/skills.json';
 import projects from '../data/projects.json';
 import FooterLink from '../components/Footer/Link';
 
@@ -35,7 +36,11 @@ const Home: NextPage = () => {
 					content='A full-stack software developer, passionate about open-source'
 					data-rh='true'
 				/>
-				<meta property='og:image' content='https://olamide.netify.live/images/meta.png' data-rh='true' />
+				<meta
+					property='og:image'
+					content='https://olamide.netify.live/images/meta.png'
+					data-rh='true'
+				/>
 
 				{/* <!-- Twitter --> */}
 				<meta property='twitter:card' content='summary_large_image' data-rh='true' />
@@ -46,7 +51,11 @@ const Home: NextPage = () => {
 					content='A full-stack software developer passionate about open-source'
 					data-rh='true'
 				/>
-				<meta property='twitter:image:src' content='https://olamide.netify.live/images/meta.png' data-rh='true' />
+				<meta
+					property='twitter:image:src'
+					content='https://olamide.netify.live/images/meta.png'
+					data-rh='true'
+				/>
 			</Head>
 			<Header />
 			<div className='fixed bottom-0 z-10 hidden flex-col items-center justify-center gap-6 px-6 pb-6  text-slate-100 after:mx-auto after:h-40 after:w-px after:bg-slate-100 md:flex lg:px-12'>
@@ -76,7 +85,7 @@ const Home: NextPage = () => {
 						A full-stack Developer, <br /> Passionate about open source.
 					</h3>
 					<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50'>
-						<Link href='/'>
+						<Link href='/resume.pdf'>
 							<a className='font-mono capitalize antialiased'>Download Résumé</a>
 						</Link>
 					</button>
@@ -112,7 +121,14 @@ const Home: NextPage = () => {
 						<Project key={index} {...project}></Project>
 					))}
 				</section>
-				<Skills />
+				<section className='mb-40 grid grid-cols-1 gap-12 xl:mx-20'>
+					<Heading text='Skills' id={2}></Heading>
+					<div className='grid grid-cols-auto-fit-skills gap-3'>
+						{skills.map((skill: SkillProps, id) => (
+							<Skill {...skill} key={id} />
+						))}
+					</div>
+				</section>
 				<section id='contact' className='mb-40 xl:mx-20'>
 					<Heading text='contact me' id={4}></Heading>
 					<div className='mx-auto my-12 grid gap-20 md:grid-cols-1fr-auto'>
