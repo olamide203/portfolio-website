@@ -82,7 +82,7 @@ const Home: NextPage = () => {
 						Olamide Atitebi.
 					</h2>
 					<h3 className='my-4 text-3xl font-semibold text-slate-100 sm:text-4xl md:text-5xl'>
-						A full-stack Developer, <br /> Open-source Enthusiast.
+						Full-stack Software Engineer, <br /> Open-source Enthusiast.
 					</h3>
 					<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50'>
 						<Link href='/resume.pdf'>
