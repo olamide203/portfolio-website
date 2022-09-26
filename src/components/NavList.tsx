@@ -10,7 +10,7 @@ export interface NavListProps {
 	closeNav: () => void;
 }
 const NavList: React.FC<NavListProps> = ({ isVisible, closeNav }) => {
-	const x = useSpring(0, { stiffness: 300, damping: 30 });
+	const x = useSpring(100, { stiffness: 300, damping: 30 });
 	const y = useTransform(x, [0, 100], ['0%', '100%']);
 	const matches = useMediaQuery('(min-width: 640px)');
 	useEffect(() => {
