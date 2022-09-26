@@ -139,7 +139,7 @@ const Home: NextPage = () => {
 							</p>
 							<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50'>
 								<Link href='mailto:olamideumarq@gmail.com'>
-									<a>Let&apos; connect</a>
+									<a>Let&apos;s connect</a>
 								</Link>
 							</button>
 						</div>
