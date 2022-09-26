@@ -84,7 +84,7 @@ const Home: NextPage = () => {
 					<h3 className='my-4 text-3xl font-semibold text-slate-100 sm:text-4xl md:text-5xl'>
 						Full-stack Software Engineer, <br /> Open-source Enthusiast.
 					</h3>
-					<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50'>
+					<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-blue-500 px-6 text-center text-blue-500 hover:bg-blue-50'>
 						<Link href='/resume.pdf'>
 							<a className='font-mono capitalize antialiased'>Download Résumé</a>
 						</Link>
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
 								I&apos;m currently looking for new opportunities and open to collaborations. feel
 								free to reach out to me
 							</p>
-							<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50'>
+							<button className='my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-blue-500 px-6 text-center text-blue-500 hover:bg-blue-50'>
 								<Link href='mailto:olamideumarq@gmail.com'>
 									<a>Let&apos;s connect</a>
 								</Link>
