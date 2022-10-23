@@ -95,11 +95,10 @@ const Home: NextPage = () => {
 					<div className='grid grid-cols-1 items-start gap-16 pt-12 lg:grid-cols-1fr-auto'>
 						<div className='col-start-1'>
 							<p className='text-[20px] font-normal text-neutral-50'>
-								Hello, my name is Olamide and I&apos;m a full-stack software developer who loves
-								solving problems with code and learning about new technologies. I&apos;m passionate
-								about Open source and enjoy creating and making contributions to open-source
-								projects as it helps me to refine my skills and at the same time add value to the
-								community while at it.
+								I&apos;m a full-stack software developer who loves solving problems with code and
+								learning about new technologies. I&apos;m passionate about Open source and enjoy
+								creating and making contributions to open-source projects as it helps me to refine
+								my skills and at the same time add value to the community while at it.
 							</p>
 						</div>
 						<div className='grid items-center justify-center'>
@@ -116,13 +115,13 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section className='mb-40 xl:mx-20' id='projects'>
-					<Heading text='Projects' id={3}></Heading>
+					<Heading text='Projects' id={2}></Heading>
 					{projects.map((project: ProjectProps, index) => (
 						<Project key={index} {...project}></Project>
 					))}
 				</section>
 				<section className='mb-40 grid grid-cols-1 gap-12 xl:mx-20'>
-					<Heading text='Skills' id={2}></Heading>
+					<Heading text='Skills' id={3}></Heading>
 					<div className='grid grid-cols-auto-fit-skills gap-3'>
 						{skills.map((skill: SkillProps, id) => (
 							<Skill {...skill} key={id} />

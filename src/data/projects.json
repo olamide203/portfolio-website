@@ -3,7 +3,7 @@
 		"id": 1,
 		"title": "hyoka",
 		"description": "A fast and precise math expression parser and evaluator for JavaScript and Typescript. Avalable on npm and can also be imported directly into browsers via CDNs",
-		"tech": ["typscript"],
+		"tech": ["typescript"],
 		"link": "https://www.npmjs.com/package/hyoka",
 		"image": "/images/hyoka-5.png",
 		"repolink": "https://github.com/olamide203/hyoka"
