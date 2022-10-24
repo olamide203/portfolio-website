@@ -93,8 +93,8 @@ const Home: NextPage = () => {
 				<section id='about' className='mb-40 xl:mx-20'>
 					<Heading text='About Me' id={1}></Heading>
 					<div className='grid grid-cols-1 items-start gap-16 pt-12 lg:grid-cols-1fr-auto'>
-						<div className='col-start-1'>
-							<p className='text-[20px] font-normal text-neutral-50'>
+						<div className='col-start-1 rounded p-10'>
+							<p className='text-[22px] font-normal text-neutral-50'>
 								I&apos;m a full-stack software developer who loves solving problems with code and
 								learning about new technologies. I&apos;m passionate about Open source and enjoy
 								creating and making contributions to open-source projects as it helps me to refine
@@ -102,15 +102,17 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 						<div className='grid items-center justify-center'>
-							<Image
-								src='/images/headshot.png'
-								width={300}
-								height={300}
-								quality={100}
-								alt='pic'
-								layout='fixed'
-								className='rounded'
-							></Image>
+							<div className='relative aspect-square w-max before:absolute before:aspect-square before:w-full before:translate-x-4 before:translate-y-4 before:border-r-[20px] before:border-b-[20px] before:border-blue-200'>
+								<Image
+									src='/images/headshot.png'
+									width={300}
+									height={300}
+									quality={100}
+									alt='pic'
+									layout='fixed'
+									className='shadow-lg'
+								></Image>
+							</div>
 						</div>
 					</div>
 				</section>
