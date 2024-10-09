@@ -13,8 +13,8 @@
 		"title": "gittz",
 		"description": "A full-stack web app which consumes the Github API to display a user's profile and repositories and also allows users to search for other users. it also integrates with the twitter API allowing users to share their projects on twitter",
 		"tech": ["react", "nodejs", "express"],
-		"link": "https://gittz.netify.live",
-		"image": "https://gittz.netify.live/images/meta.png",
+		"link": "https://www.gitsocial.net",
+		"image": "https://www.gitsocial.net/images/meta.png",
 		"repolink": "https://github.com/olamide203/gittz"
 	}
 ]

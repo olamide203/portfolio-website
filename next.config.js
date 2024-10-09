@@ -3,7 +3,7 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	images: {
-		domains: ['raw.githubusercontent.com', 'www.vectorlogo.zone', 'gittz.netify.live'],
+		domains: ['raw.githubusercontent.com', 'www.vectorlogo.zone', 'www.gitsocial.net'],
 	},
 };
 
