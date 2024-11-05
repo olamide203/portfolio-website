@@ -1,35 +1,28 @@
 {
-	"name": "portfolio-website",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"format:check": "prettier . --check",
-		"format:fix": "prettier . --write --ignore-unknown"
-	},
-	"dependencies": {
-		"@stitches/react": "^1.2.8",
-		"framer-motion": "^7.3.5",
-		"next": "12.2.5",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"react-icons": "^4.4.0"
-	},
-	"devDependencies": {
-		"@types/node": "18.7.15",
-		"@types/react": "18.0.18",
-		"@types/react-dom": "18.0.6",
-		"autoprefixer": "^10.4.8",
-		"eslint": "8.23.0",
-		"eslint-config-next": "12.2.5",
-		"eslint-config-prettier": "^8.5.0",
-		"postcss": "^8.4.16",
-		"prettier": "^2.7.1",
-		"prettier-plugin-tailwindcss": "^0.1.13",
-		"tailwindcss": "^3.1.8",
-		"typescript": "^4.8.3"
-	}
+  "name": "portfolio-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "next": "15.0.2",
+    "framer-motion": "^12.0.0-alpha.1",
+    "react-icons": "^4.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2"
+  }
 }
