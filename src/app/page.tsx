@@ -1,3 +1,4 @@
+import Hero from "@/components/hero/hero";
 import Header from "../components/Header";
 import Link from "next/link";
 import Image from "next/image";
@@ -60,25 +61,7 @@ const Home = () => {
         </Link>
       </div>
       <main className="mx-auto w-full max-w-screen-2xl px-10 md:px-28">
-        <section className="my-10 grid min-h-screen max-w-screen-lg content-center sm:my-0 xl:mx-20">
-          <span className="my-4 font-mono text-blue-400">
-            Hi there, I&apos;m
-          </span>
-          <h2 className="text-[clamp(40px,8vw,80px)] font-semibold text-slate-50">
-            Olamide Atitebi.
-          </h2>
-          <h3 className="my-4 text-3xl font-semibold text-slate-100 sm:text-4xl md:text-5xl">
-            Full-stack Software Engineer, <br /> Open-source Enthusiast.
-          </h3>
-          <button className="my-4 inline-flex h-12 w-max cursor-pointer flex-wrap content-center items-center rounded border border-green-200 px-6 text-center text-green-200 hover:bg-blue-50">
-            <Link
-              href="/resume.pdf"
-              className="font-mono capitalize antialiased"
-            >
-              Download Résumé
-            </Link>
-          </button>
-        </section>
+        <Hero />
         <section id="about" className="mb-40 xl:mx-20">
           <Heading text="About Me" id={1}></Heading>
           <div className="grid grid-cols-1 items-start gap-16 pt-12 lg:grid-cols-1fr-auto">
