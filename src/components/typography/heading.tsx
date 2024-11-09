@@ -1,6 +1,5 @@
 import { TextNode } from "./text";
-import { LinkNode } from "./inline";
-import { renderContent } from "./block";
+import { LinkNode } from "./link";
 import { ReactNode } from "react";
 
 export interface Heading {
