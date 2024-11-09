@@ -18,6 +18,7 @@ import Skill, { SkillProps } from "../components/Skill";
 import skills from "../data/skills.json";
 import projects from "../data/projects.json";
 import FooterLink from "../components/Footer/Link";
+import { AboutSection } from "@/components/about";
 
 interface Icons {
   [key: string]: IconType | undefined;
@@ -62,33 +63,7 @@ const Home = () => {
       </div>
       <main className="mx-auto w-full max-w-screen-2xl px-10 md:px-28">
         <Hero />
-        <section id="about" className="mb-40 xl:mx-20">
-          <Heading text="About Me" id={1}></Heading>
-          <div className="grid grid-cols-1 items-start gap-16 pt-12 lg:grid-cols-1fr-auto">
-            <div className="col-start-1 rounded sm:p-10">
-              <p className="text-xl font-normal text-neutral-50 md:text-[22px]">
-                I&apos;m a full-stack software developer who loves solving
-                problems with code and learning about new technologies. I&apos;m
-                passionate about Open source and enjoy creating and making
-                contributions to open-source projects as it helps me to refine
-                my skills and at the same time add value to the community while
-                at it.
-              </p>
-            </div>
-            <div className="grid items-center justify-center">
-              <div className="relative aspect-square w-max before:absolute before:aspect-square before:w-full before:translate-x-4 before:translate-y-4 before:border-r-[20px] before:border-b-[20px] before:border-neutral-500">
-                <Image
-                  src="/images/headshot.png"
-                  width={300}
-                  height={300}
-                  quality={100}
-                  alt="pic"
-                  className="shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <AboutSection />
         <section className="mb-40 xl:mx-20" id="projects">
           <Heading text="Projects" id={2}></Heading>
           {projects.map((project: ProjectProps, index) => (
