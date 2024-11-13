@@ -1,7 +1,6 @@
 import Hero from "@/components/hero/hero";
 import Header from "../components/Header";
 import Link from "next/link";
-import Image from "next/image";
 import Heading from "../components/Heading";
 import Project, { ProjectProps } from "../components/Project";
 import {
@@ -19,7 +18,7 @@ import skills from "../data/skills.json";
 import projects from "../data/projects.json";
 import FooterLink from "../components/Footer/Link";
 import { AboutSection } from "@/components/about";
-
+import { ExperienceSection } from "@/components/experience";
 interface Icons {
   [key: string]: IconType | undefined;
 }
@@ -64,8 +63,9 @@ const Home = () => {
       <main className="mx-auto w-full max-w-screen-2xl px-10 md:px-28">
         <Hero />
         <AboutSection />
+        <ExperienceSection />
         <section className="mb-40 xl:mx-20" id="projects">
-          <Heading text="Projects" id={2}></Heading>
+          <Heading text="Projects" id={3} />
           {projects.map((project: ProjectProps, index) => (
             <Project key={index} {...project}></Project>
           ))}

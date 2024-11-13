@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { Tag } from "./tag";
 
 export interface ProjectProps {
   title: string;
@@ -39,14 +40,9 @@ const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
           {props.title}
         </h3>
         <p className="text-lg text-neutral-100">{props.description}</p>
-        <div className="mt-4 flex items-center gap-2">
+        <div className="mt-4 flex items-center gap-2 flex-wrap">
           {props.tech.map((tech, index) => (
-            <span
-              className="rounded-2xl bg-blue-400 px-3 pt-1 capitalize text-neutral-50"
-              key={index}
-            >
-              {tech}
-            </span>
+            <Tag text={tech} key={index} />
           ))}
         </div>
         <div className="mt-4 flex items-center gap-4">

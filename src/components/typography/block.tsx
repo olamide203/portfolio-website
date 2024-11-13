@@ -13,7 +13,7 @@ export type BlockContent = (
 
 interface ListNode {
   type: "bullet_list" | "ordered_list";
-  attrs: {
+  attrs?: {
     tight: boolean;
     start?: number;
   };
@@ -22,7 +22,7 @@ interface ListNode {
 
 export interface BlockText {
   type: "paragraph" | "blockquote" | "list_item";
-  attrs: {
+  attrs?: {
     alignment: "left" | "center" | "right" | "justify";
   };
   content: BlockContent;
